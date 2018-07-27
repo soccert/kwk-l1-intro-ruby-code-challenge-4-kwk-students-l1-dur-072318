@@ -16,7 +16,7 @@ def least_coins(coins)
   if coins% quarters >= 0
     value_quarters = coins / 25
     value_quarters = value_quarters.to_i
-    value_quarters * 25 = coins_qd
+    coins_qd = value_quarters * 25
     coins = coins - coins_qd
   end
   
