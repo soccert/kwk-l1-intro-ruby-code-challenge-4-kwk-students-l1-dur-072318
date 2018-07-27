@@ -45,4 +45,4 @@ def least_coins(coins)
   
 end
 
-least_coins(110)
+least_coins(29)
