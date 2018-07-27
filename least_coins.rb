@@ -20,21 +20,21 @@ def least_coins(coins)
     coins = coins - coins_qd
   end
   
-  if coins% dimes == 0
+  if coins% coins_value["dimes"] == 0
     value_dimes = coins / 10
     value_dimes = value_dimes.to_i
     coins_dd = value_dimes * 10
     coins = coins - coins_dd
   end
   
-  if coins% nickels == 0
+  if coins% coins_value["nickels"] == 0
     value_nickels = coins / 5
     value_nickels = value_nickels.to_i
     coins_nd = value_nickels * 5
     coins = coins - coins_nd
   end
   
-  if coins% pennies == 0
+  if coins% coins_value["pennies"] == 0
     value_pennies = coins / 1
     value_pennies = value_pennies.to_i
     coins_pd = value_pennies * 1
