@@ -10,9 +10,9 @@ value_dimes = 0
 value_nickels = 0
 value_pennies = 0
 
-coins_value = {"quarters" => value_quarters, "dimes" => value_dimes, "nickels" => value_nickels, "pennies" => value_pennies}
 
 def least_coins(coins)
+  coins_value = {"quarters" => 25, "dimes" => 10, "nickels" => 5, "pennies" => 1}
   if coins% coins_value["quarters"] == 0
     value_quarters = coins / 25
     value_quarters = value_quarters.to_i
